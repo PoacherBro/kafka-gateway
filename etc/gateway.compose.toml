@@ -1,0 +1,11 @@
+server_name = "kafka-gateway"
+production = false
+http_addr = ":9080"
+grpc_addr = ":9081"
+log_level = "trace"
+
+[kafka]
+addr = ["kafka-1:19092", "kafka-2:29092", "kafka-3:39092"]
+bak_addr = ["kafka-bak:9092"]
+
+
